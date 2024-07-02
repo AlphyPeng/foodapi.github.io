@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <section id="home">
+      <nav class="navbar">
+        <div class="navbar-container">
+          <h1 class="website-name">Alphy<span>Resto.</span></h1>
+
+          <ul class="navbar-menu">
+            <li class="navbar__item">
+              <a href="#" class="navbar__links active"> Home </a>
+            </li>
+            <li class="navbar__item">
+              <a href="#about" class="navbar__links"> About </a>
+            </li>
+            <li class="navbar__item">
+              <a href="#menu" class="navbar__links"> Menu </a>
+            </li>
+            <li class="navbar__btn">
+              <a href="#review" class="navbar__links"> Review </a>
+            </li>
+            <li class="navbar__btn">
+              <a href="#" class="navbar__links"> Blog </a>
+            </li>
+            <li class="navbar__btn">
+              <a href="#" class="navbar__links"> Contact </a>
+            </li>
+          </ul>
+          <div class="navmen">
+            <div class="nav-icons">
+              <i
+                class="fa-solid fa-magnifying-glass fa-nav"
+                id="search-btn"
+              ></i>
+              <i class="fa-solid fa-heart fa-nav"></i>
+              <i class="fa-solid fa-cart-shopping fa-nav"></i>
+            </div>
+            <div class="container" id="menuIcon">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="search-info">
+        <div class="search-meal" id="search-meal">
+          <button
+            type="button"
+            class="btn recipe-close-btn"
+            id="recipe-close-btn"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+          <div class="meal-search">
+            <h1 class="notFound">Sorry, we did not find your meal.</h1>
+            <div class="meal-search-box">
+              <input
+                type="text"
+                class="search-control"
+                placeholder="Enter an ingredients"
+                id="search-input"
+              />
+              <a href="#menu">
+                <button type="submit" class="search-but btn">
+                  <i class="fas fa-search"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-page">
+        <div class="home-intro">
+          <h1>QUALITY FOODS</h1>
+          <p>Maghanap ng masasarap na luting pagkain.</p>
+        </div>
+        <div class="home-recipe">
+          <button type="button" id="find-recipes">Find Recipes</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Page -->
+    <section id="about">
+      <div class="about-page">
+        <div class="about-title">
+          <h2>About us</h2>
+          <h1>WHY CHOOSE US?</h1>
+        </div>
+        <div class="about-content">
+          <div class="about-img">
+            <img src="images/about_img.jpg" alt="" />
+          </div>
+          <div class="about-text">
+            <h1>Best Food All Over The World</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, ea
+              molestias. Ut, in cumque beatae earum eos ab quo natus voluptatum,
+              accusantium eligendi animi debitis, consequuntur esse alias sequi
+              deserunt?
+            </p>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, ea
+              molestias. Ut, in cumque beatae earum eos ab quo natus voluptatum,
+              accusantium eligendi animi debitis, consequuntur esse alias sequi
+              deserunt?
+            </p>
+            <button class="about-button">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Page -->
+    <section id="menu">
+      <div class="menu-page">
+        <div class="menu-title">
+          <h2>Menu</h2>
+          <h1>TODAY'S SPECIALITY?</h1>
+        </div>
+        <div class="menu-result">
+          <div class="menu-meal" id="menu-meal">
+            <!-- <div class="menu-item">
+                        <div class="menu-img">
+                            <img src="https://tse3.mm.bing.net/th?id=OIP.UEwFYHd6G6Q4F0kOCTREpQHaE7&pid=Api&P=0&h=180"
+                                alt="food">
+                        </div>
+                        <div class="rating-container">
+                            <i class="fas fa-star fa-2x active"></i>
+                            <i class="fas fa-star fa-2x"></i>
+                            <i class="fas fa-star fa-2x"></i>
+                            <i class="fas fa-star fa-2x"></i>
+                            <i class="fas fa-star fa-2x"></i>
+                        </div>
+                        <div class="menu-text">
+                            <h3>Delecious Food</h3>
+                            <p>Lorem ipsum, dolor sit amet ad we bred consectetur adipisicing elit.</p>
+                            <button class="recipe-btn" id="recipe-btn">Read More</button>
+                        </div>
+                    </div> -->
+          </div>
+        </div>
+        <div class="menu-details">
+          <button type="button" class="close-btn" id="close-btn">
+            <i class="fas fa-times"></i>
+          </button>
+          <div class="menu-details-content">
+            <!-- <h2 class="recipe-title">Meals Name Here</h2>
+                    <p class="recipe-category">Category Name</p>
+                    <div class="recipe-instruct">
+                        <h3>Instruction:</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neceszsitatibus nostrum natus, vitae
+                            facilis adipisci officia inventore voluptas velit blanditiis quas sequi earum alias harum
+                            dolor. Voluptatibus ratione doloribus delectus. Quam.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus nostrum natus, vitae
+                            facilis adipisci officia inventore voluptas velit blanditiis quas sequi earum alias harum
+                            dolor. Voluptatibus ratione doloribus delectus. Quam.</p>
+                    </div>
+                    <div class="recipe-link">
+                        <a href="#" target="_blank">Watch Video</a>
+                    </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--     
+    <section id="review">
+        <div class="review-page">
+            <div class="review-title">
+                <h2>Customer's Review</h2>
+                <h1>WHAT THEY SAY?</h1>
+            </div>
+            <div class="review-wrapper">
+                <div class="card">
+                    <div class="image-content">
+                        <div class="card-image">
+                            <img src="https://sp-images.summitpost.org/947006.jpg?auto=format&fit=max&ixlib=php-2.1.1&q=35&w=1024&s=d877834568578388ef13b78e3cd7ba2b" alt="food">
+                            <div class="name">
+                                <h3>Alphy Balatucan</h3>
+                            </div>
+                        </div>
+                        <div class="rating-user">
+                            <i class="fas fa-star fa-2x active"></i>
+                            <i class="fas fa-star fa-2x"></i>
+                            <i class="fas fa-star fa-2x"></i>
+                            <i class="fas fa-star fa-2x"></i>
+                            <i class="fas fa-star fa-2x"></i>
+                        </div> 
+                    </div>
+                    <div class="card-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut commodi porro ab earum modi, aperiam hic ut quibusdam nisi officiis quas nemo quos quod fuga illo? Veritatis eum nobis at.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-content">
+                        <div class="card-image">
+                            <img src="https://sp-images.summitpost.org/947006.jpg?auto=format&fit=max&ixlib=php-2.1.1&q=35&w=1024&s=d877834568578388ef13b78e3cd7ba2b" alt="food">
+                            <div class="name">
+                                <h3>Alphy Balatucan</h3>
+                            </div>
+                        </div>
+                        <div class="rating-user">
+                            <i class="fas fa-star fa-2x active"></i>
+                            <i class="fas fa-star fa-2x"></i>
+                            <i class="fas fa-star fa-2x"></i>
+                            <i class="fas fa-star fa-2x"></i>
+                            <i class="fas fa-star fa-2x"></i>
+                        </div> 
+                    </div>
+                    <div class="card-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut commodi porro ab earum modi, aperiam hic ut quibusdam nisi officiis quas nemo quos quod fuga illo? Veritatis eum nobis at.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-content">
+                        <div class="card-image">
+                            <img src="https://sp-images.summitpost.org/947006.jpg?auto=format&fit=max&ixlib=php-2.1.1&q=35&w=1024&s=d877834568578388ef13b78e3cd7ba2b" alt="food">
+                            <div class="name">
+                                <h3>Alphy Balatucan</h3>
+                            </div>
+                        </div>
+                        <div class="rating-user">
+                            <i class="fas fa-star fa-2x active"></i>
+                            <i class="fas fa-star fa-2x"></i>
+                            <i class="fas fa-star fa-2x"></i>
+                            <i class="fas fa-star fa-2x"></i>
+                            <i class="fas fa-star fa-2x"></i>
+                        </div> 
+                    </div>
+                    <div class="card-content">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut commodi porro ab earum modi, aperiam hic ut quibusdam nisi officiis quas nemo quos quod fuga illo? Veritatis eum nobis at.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- https://www.youtube.com/watch?v=MJUssi2c6Ls -->
+
+    <!-- https://www.youtube.com/watch?v=GiWJQOin5dk -->
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
